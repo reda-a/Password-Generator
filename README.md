@@ -1,2 +1,2 @@
 # Password-Generator
-This is a password generator web app built with Angular. It allows users to generate strong passwords with options for length, including uppercase, lowercase, numbers, and symbols.
+This password generator application is designed to provide users with strong and secure passwords for their various online accounts. With options to choose the length of the password and include uppercase letters, numbers, and symbols, the generated passwords are randomized and difficult to guess. Built with Angular and Bootstrap, this application offers a sleek and user-friendly interface for generating passwords on the fly. Protect your online security with this easy-to-use password generator.
