@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class PasswordGeneratorComponent {
   charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
   password = '';
-  length = 10;
+  length = 23;
   includeUppercase = true;
   includeNumbers = true;
   includeSymbols = true;
@@ -33,5 +33,16 @@ generatedPassword: any;
     }
     this.password = result;
   }
+  
+  copyPassword(): void {
+    const passwordInput = document.createElement('input');
+    passwordInput.setAttribute('type', 'text');
+    passwordInput.setAttribute('value', this.password);
+    document.body.appendChild(passwordInput);
+    passwordInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(passwordInput);
+  }
+  
 }
 
